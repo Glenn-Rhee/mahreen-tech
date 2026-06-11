@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href={"/"} className="font-bold text-xl lg:text-3xl">
             <h1>Mahreen Indonesia.</h1>
           </Link>
-          <ul className="md:flex hidden justify-around items-center md:gap-x-8 lg:gap-x-16">
+          <ul className="lg:flex hidden justify-around items-center md:gap-x-8 lg:gap-x-16">
             {menuNavbar.map((menu) => (
               <li
                 key={menu.href + menu.title}
@@ -57,7 +57,7 @@ export default function Navbar() {
           </ul>
           <button
             onClick={() => setIsOpen(true)}
-            className="p-2 rounded-lg block md:hidden hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-lg block lg:hidden hover:bg-gray-100 transition-colors"
             aria-label="Buka menu"
           >
             <Menu size={26} />
@@ -68,14 +68,14 @@ export default function Navbar() {
       <div
         onClick={() => setIsOpen(false)}
         className={`
-          md:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300
+          lg:hidden fixed inset-0 bg-black/50 z-40 transition-opacity duration-300
           ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
         `}
       />
 
       <div
         className={`
-          md:hidden fixed top-0 right-0 h-full w-[85vw] max-w-sm bg-white z-50
+          lg:hidden fixed top-0 right-0 h-full w-[85vdw] max-w-sm bg-white z-50
           shadow-2xl flex flex-col
           transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "translate-x-full"}
