@@ -99,7 +99,7 @@ export default function WhyJoinUs() {
               variants={fadeFromTop(0.4)}
               initial="hidden"
               animate={isInView ? "visible" : "hidden"}
-              className="font-medium text-xl md:text-3xl"
+              className="font-bold text-xl md:text-3xl"
             >
               Keunggulan Program
             </motion.h4>
