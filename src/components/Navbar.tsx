@@ -4,7 +4,7 @@ import Container from "./Container";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const menuNavbar = [
+export const menuNavbar = [
   {
     title: "Home",
     href: "/",
@@ -22,7 +22,6 @@ const menuNavbar = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Lock body scroll saat drawer terbuka
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
