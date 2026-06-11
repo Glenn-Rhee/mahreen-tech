@@ -39,18 +39,18 @@ const sosmeds = [
 export default function Footer() {
   return (
     <footer className="w-full bg-text-primary py-4 text-white">
-      <Container className="flex justify-between">
+      <Container className="flex flex-col lg:flex-row gap-y-6 justify-between">
         <div className="flex flex-col gap-y-2 max-w-xl">
           <h4 className="font-bold text-3xl">Mahreen Indonesia</h4>
-          <p className="">
+          <p className="text-sm">
             Mendorong generasi muda Indonesia untuk berkarya melalui kreativitas
             dan teknologi.
           </p>
         </div>
 
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-2 lg:gap-y-4">
           <h6 className="font-medium text-xl">Telusuri</h6>
-          <ul className="flex flex-col gap-y-2">
+          <ul className="flex flex-col gap-y-1 lg:gap-y-2">
             {helps.map((menu) => (
               <li key={menu.title} className="">
                 <Link href={menu.href} className="text-sm hover:underline">
@@ -61,9 +61,9 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-2 lg:gap-y-4">
           <h6 className="font-medium text-xl">Bantuan</h6>
-          <ul className="flex flex-col gap-y-2">
+          <ul className="flex flex-col gap-y-1 lg:gap-y-2">
             {menuNavbar.map((menu) => (
               <li key={menu.title} className="">
                 <Link href={menu.href} className="text-sm hover:underline">
@@ -74,7 +74,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-y-4">
+        <div className="flex flex-col gap-y-2 lg:gap-y-4">
           <h6 className="font-medium text-xl">Ikuti Kami</h6>
           <ul className="flex gap-x-6 items-center">
             {sosmeds.map((menu, i) => (
