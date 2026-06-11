@@ -36,7 +36,7 @@ export default function AboutProgram() {
           return (
             <div
               key={card.title}
-              className="flex flex-col items-center w-full gap-y-4 lg:gap-y-3 rounded-md bg-white border border-primary shadow-md h-full justify-start px-3 py-3 lg:px-10 lg:py-6"
+              className="flex flex-col items-center w-full gap-y-4 lg:gap-y-3 rounded-md bg-white border border-primary shadow-xl h-full justify-start px-3 py-3 lg:px-10 lg:py-6"
             >
               <div className="flex flex-col gap-y-1 items-center">
                 <div className="size-16 bg-primary rounded-full flex items-center justify-center">
