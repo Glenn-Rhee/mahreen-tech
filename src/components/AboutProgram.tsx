@@ -22,7 +22,7 @@ const dataCards = [
 ];
 export default function AboutProgram() {
   return (
-    <main className="w-full flex flex-col gap-y-8 lg:gap-y-0 items-center justify-between md:my-40 lg:my-16 my-8">
+    <section className="w-full flex flex-col gap-y-8 lg:gap-y-0 items-center justify-between my-40 lg:my-32">
       <div className="flex flex-col w-full items-center text-center gap-y-4">
         <h2 className="font-bold text-3xl md:text-5xl">Tentang Program</h2>
         <p className="max-w-3xl">
@@ -30,13 +30,13 @@ export default function AboutProgram() {
           berinovasi, dan berkembang melalui teknologi.
         </p>
       </div>
-      <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-3 items-center justify-center mt-4 lg:mt-8">
+      <div className="w-full grid grid-cols-1 gap-8 md:gap-6 lg:gap-16 md:grid-cols-3 items-center justify-center mt-2 md:mt-4 lg:mt-8">
         {dataCards.map((card) => {
           const Icon = card.icon;
           return (
             <div
               key={card.title}
-              className="flex flex-col items-center w-full gap-y-4 lg:gap-y-8 rounded-md bg-[#FFFAE6] shadow-md h-full justify-start md:px-3 md:py-3 lg:px-10 lg:py-6"
+              className="flex flex-col items-center w-full gap-y-4 lg:gap-y-3 rounded-md bg-white border border-primary shadow-md h-full justify-start px-3 py-3 lg:px-10 lg:py-6"
             >
               <div className="flex flex-col gap-y-1 items-center">
                 <div className="size-16 bg-primary rounded-full flex items-center justify-center">
@@ -49,6 +49,6 @@ export default function AboutProgram() {
           );
         })}
       </div>
-    </main>
+    </section>
   );
 }
