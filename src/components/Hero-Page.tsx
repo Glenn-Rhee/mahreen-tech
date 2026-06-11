@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroPage() {
   return (
-    <main className="w-full flex flex-col lg:flex-row gap-y-8 lg:gap-y-0 items-center justify-between md:my-10 lg:my-16 my-8 h-[80dvh] md:h-[75dvh]">
+    <main className="w-full flex flex-col lg:flex-row gap-y-8 lg:gap-y-0 items-center justify-between md:my-6 lg:my-16 my-8 h-[80dvh] md:h-[85dvh] lg:h-[75dvh]">
       <div className="flex flex-col gap-y-2 md:gap-y-4 lg:gap-y-8 order-last lg:order-first">
         <h1 className="font-bold text-3xl md:text-5xl max-w-2xl">
           Wujudkan <span className="text-primary">Ide Kreatifmu </span> dengan{" "}
