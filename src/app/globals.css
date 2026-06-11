@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
-:root {
+@theme {
+  --font-poppins: var(--font-poppins);
+  
   --color-primary: #F4C300;
   --color-secondary: #0038A1;
   --color-text-primary: #001E56;
+
 }
