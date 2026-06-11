@@ -35,7 +35,7 @@ export default function Navbar() {
   }, [isOpen]);
   return (
     <>
-      <nav className="shadow-md sticky top-0 right-0 left-0 py-3">
+      <nav className="shadow-md bg-white sticky top-0 right-0 left-0 py-3 z-30">
         <Container className="flex items-center justify-between">
           <Link href={"/"} className="font-bold text-xl lg:text-3xl">
             <h1>Mahreen Indonesia.</h1>
