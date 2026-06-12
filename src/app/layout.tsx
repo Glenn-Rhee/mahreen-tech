@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Mahreen Indonesia",
-  description: "Wujudkan ide keratif dengan Teknologi bersama Mahreen Indonesia.",
+  description:
+    "Wujudkan ide keratif dengan Teknologi bersama Mahreen Indonesia.",
 };
 
 const poppins = Poppins({
@@ -20,7 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} h-full antialiased scroll-smooth`}
+    >
       <body className="min-h-full text-text-primary flex font-poppins flex-col">
         <Navbar />
         {children}
