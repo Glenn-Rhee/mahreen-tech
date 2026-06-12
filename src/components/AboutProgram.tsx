@@ -51,8 +51,9 @@ export default function AboutProgram() {
 
   return (
     <section
+      id="about-program"
       ref={ref}
-      className="w-full flex flex-col gap-y-8 lg:gap-y-0 items-center justify-between my-40 lg:my-32"
+      className="w-full scroll-mt-40 flex flex-col gap-y-8 lg:gap-y-0 items-center justify-between my-40 lg:my-32"
     >
       {/* Header */}
       <div className="flex flex-col w-full items-center text-center gap-y-4">
