@@ -51,8 +51,9 @@ export default function WhyJoinUs() {
 
   return (
     <section
+      id="join"
       ref={ref}
-      className="w-full flex flex-col gap-y-8 lg:gap-y-16 items-center justify-between my-40 lg:my-32 h-[85dvh] lg:h-[75dvh]"
+      className="w-full scroll-mt-30 flex flex-col gap-y-8 lg:gap-y-16 items-center justify-between my-40 lg:my-32 h-[85dvh] lg:h-[75dvh]"
     >
       {/* Judul & paragraf */}
       <div className="flex flex-col w-full items-center text-center gap-y-2 lg:gap-y-4">
