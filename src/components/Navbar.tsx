@@ -7,15 +7,15 @@ import { Menu, X } from "lucide-react";
 export const menuNavbar = [
   {
     title: "Home",
-    href: "/",
+    href: "#home",
   },
   {
     title: "Tentang Program",
-    href: "#",
+    href: "#about-program",
   },
   {
     title: "Bergabung",
-    href: "#",
+    href: "#join",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function Navbar() {
                 key={menu.href + menu.title}
                 className="font-medium md:text-lg lg:text-xl hover:underline text-center"
               >
-                <Link href={menu.href}>{menu.title}</Link>
+                <a href={menu.href}>{menu.title}</a>
               </li>
             ))}
             <li className="font-medium text-xl hover:underline">
@@ -94,13 +94,13 @@ export default function Navbar() {
         <ul className="flex flex-col px-6 py-6 gap-y-1 flex-1">
           {menuNavbar.map((menu) => (
             <li key={menu.href + menu.title}>
-              <Link
+              <a
                 href={menu.href}
                 onClick={() => setIsOpen(false)}
                 className="block font-medium text-lg py-3 px-3 rounded-lg hover:bg-gray-50 transition-colors"
               >
                 {menu.title}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
