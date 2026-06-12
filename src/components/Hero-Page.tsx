@@ -56,8 +56,9 @@ export default function HeroPage() {
 
   return (
     <main
+      id="home"
       ref={ref}
-      className="w-full flex flex-col lg:flex-row gap-y-8 lg:gap-y-0 items-center justify-between my-6 lg:my-16 h-[85dvh] lg:h-[75dvh]"
+      className="w-full flex flex-col scroll-mt-1200 lg:flex-row gap-y-8 lg:gap-y-0 items-center justify-between my-6 lg:my-16 h-[85dvh] lg:h-[75dvh]"
     >
       {/* Text side */}
       <div className="flex flex-col gap-y-2 md:gap-y-4 lg:gap-y-8 order-last lg:order-first">
